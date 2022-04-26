@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 $colorprimaire : #9356DC;
 $colorsecondaire : #FF79DA;
 $colortertiaire : #99E2D0;
+$policetitre : 'Shrikhand',;
+$policenormale : 'roboto';
+
+*{
+    font-family: $policenormale;
+}
+
+header{
+    h1{
+        font-family: $policetitre;
+    }
+}
