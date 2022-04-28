@@ -91,13 +91,20 @@ main{
 
     .fonctionnement{
         .cadrefonctionnement{
+            padding: 50px 25px;
+
             h2{
 
             }
 
             .etapesfonctionnement{
+                display: flex;
                 .numerosfonctionnement{
-
+                    background-color: $colorprimaire;
+                    color: white;
+                    padding: 6px 10px 4px 10px;
+                    border-radius: 100%;
+                    font-family: 'roboto';
                 }
 
                 .fas{

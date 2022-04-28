@@ -109,6 +109,24 @@ main .reservation .cadrereserv form #explorer {
           box-shadow: 0px 5px 8px 0px #b2b2b2;
 }
 
+main .fonctionnement .cadrefonctionnement {
+  padding: 50px 25px;
+}
+
+main .fonctionnement .cadrefonctionnement .etapesfonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .fonctionnement .cadrefonctionnement .etapesfonctionnement .numerosfonctionnement {
+  background-color: #9356DC;
+  color: white;
+  padding: 6px 10px 4px 10px;
+  border-radius: 100%;
+  font-family: 'roboto';
+}
+
 footer .cadrefooter {
   margin-top: 50px;
   background-color: #383838;
