@@ -5,9 +5,138 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "roboto";
 }
 
-header h1 {
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #cadrelogo {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 -6px 20px 0px #383838;
+          box-shadow: 0 -6px 20px 0px #383838;
+  position: relative;
+}
+
+header #cadrelogo img {
+  width: 35%;
+}
+
+header p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 55px;
+  background-color: #e1e1e1;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+header p #localisation .fa-map-marker-alt {
+  margin-right: 15px;
+  color: #383838;
+}
+
+main .reservation {
+  width: 100%;
+}
+
+main .reservation .cadrereserv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ececec;
+  padding: 50px 15px;
+}
+
+main .reservation .cadrereserv h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+main .reservation .cadrereserv #exploration {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+main .reservation .cadrereserv form #explorer {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 8px 0px #b2b2b2;
+          box-shadow: 0px 5px 8px 0px #b2b2b2;
+}
+
+footer .cadrefooter {
+  margin-top: 50px;
+  background-color: #383838;
+  padding: 20px;
+}
+
+footer .cadrefooter .logo {
   font-family: "Shrikhand";
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+footer .cadrefooter nav ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer .cadrefooter nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .cadrefooter nav ul li a i {
+  margin-right: 15px;
+}
+
+footer .cadrefooter nav ul li a i.fas.fa-hands-helping {
+  font-size: 0.7em;
 }
 /*# sourceMappingURL=styles.css.map */

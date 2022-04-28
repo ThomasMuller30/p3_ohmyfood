@@ -3,6 +3,9 @@
 $colorprimaire : #9356DC;
 $colorsecondaire : #FF79DA;
 $colortertiaire : #99E2D0;
+$colorgris: #383838;
+$colorgrisclair: #e1e1e1;
+$colorgristresclair: #ececec;
 $policetitre : 'Shrikhand',;
 $policenormale : 'roboto';
 
@@ -11,10 +14,157 @@ $policenormale : 'roboto';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: $policenormale;
 }
 
 header{
-    h1{
-        font-family: $policetitre;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #cadrelogo{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 -6px 20px 0px #383838;
+        position: relative;
+        img{
+            width: 35%;
+        }
+    }
+    
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 55px;
+        background-color: $colorgrisclair;
+        font-size: 1.2em;
+        font-weight: 600;
+        #localisation{
+            .fa-map-marker-alt{
+                margin-right: 15px;
+                color:$colorgris;
+            }
+        }
+    }
+}
+
+main{
+    .reservation{
+        width: 100%;
+        .cadrereserv{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $colorgristresclair;
+            padding: 50px 15px;
+
+            h1{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            #exploration{
+                text-align: center;
+                margin-bottom: 15px;
+
+            }
+
+            form{
+                #explorer{
+                    text-align: center;
+                    background: linear-gradient($colorsecondaire, $colorprimaire);
+                    color: white;
+                    border: none;
+                    padding: 15px;
+                    border-radius: 50px;
+                    box-shadow: 0px 5px 8px 0px #b2b2b2;
+                }
+            }
+        }
+    }
+
+    .fonctionnement{
+        .cadrefonctionnement{
+            h2{
+
+            }
+
+            .etapesfonctionnement{
+                .numerosfonctionnement{
+
+                }
+
+                .fas{
+
+                }
+            }
+        }
+    }
+
+    .restaurants{
+        .cadrerestaurants{
+            .articlerestaurant{
+                img{
+
+                }
+                .container{
+                    .fas{
+
+                    }
+
+                    .far{
+
+                    }
+
+                    .conteneur{
+                        h3{
+
+                        }
+
+                        p{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    .cadrefooter{
+        margin-top: 50px;
+        background-color: $colorgris;
+        padding: 20px;
+        .logo{
+            font-family: $policetitre;
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        nav{
+            ul{
+                li{
+                    list-style: none;
+                    margin-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        i{
+                            margin-right: 15px;
+                        }
+                        i.fas.fa-hands-helping {
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
