@@ -23,7 +23,6 @@ header {
 
 header #cadrelogo {
   width: 100%;
-  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +39,7 @@ header #cadrelogo {
 
 header #cadrelogo img {
   width: 35%;
+  margin: 25px;
 }
 
 header p {
@@ -61,7 +61,7 @@ header p {
 
 header p #localisation .fa-map-marker-alt {
   margin-right: 15px;
-  color: #383838;
+  color: #787878;
 }
 
 main .reservation {
@@ -97,7 +97,9 @@ main .reservation .cadrereserv #exploration {
   margin-bottom: 15px;
 }
 
-main .reservation .cadrereserv form #explorer {
+main .reservation .cadrereserv a {
+  text-decoration: none;
+  color: white;
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -109,27 +111,131 @@ main .reservation .cadrereserv form #explorer {
           box-shadow: 0px 5px 8px 0px #b2b2b2;
 }
 
-main .fonctionnement .cadrefonctionnement {
-  padding: 50px 25px;
+main .fonctionnement {
+  width: 100%;
 }
 
-main .fonctionnement .cadrefonctionnement .etapesfonctionnement {
+main .fonctionnement .cadrefonctionnement {
+  padding: 50px 25px;
+  margin: 0 0 25px 0;
+}
+
+main .fonctionnement .cadrefonctionnement .etapes {
+  padding: 0 10px;
+}
+
+main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement {
+  background-color: #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 10px 0px #cfcfcf;
+          box-shadow: 0px 5px 10px 0px #cfcfcf;
+  margin-top: 25px;
+  height: 70px;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
-main .fonctionnement .cadrefonctionnement .etapesfonctionnement .numerosfonctionnement {
+main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement .numerosfonctionnement {
   background-color: #9356DC;
   color: white;
   padding: 6px 10px 4px 10px;
   border-radius: 100%;
   font-family: 'roboto';
+  position: relative;
+  left: -15px;
+}
+
+main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement p {
+  margin: 0;
+}
+
+main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement .fas {
+  color: #787878;
+  font-size: 1.4em;
+  margin: 0 15px 0 8px;
+}
+
+main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement .fa-store {
+  color: #9356DC;
+}
+
+main .fonctionnement .cadrefonctionnement .etapes .degustez {
+  background-color: #f8f2ff;
+}
+
+main #restaurants {
+  background-color: #ececec;
+}
+
+main #restaurants .cadrerestaurants {
+  padding: 50px 25px;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant {
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 10px 0px #cfcfcf;
+          box-shadow: 0px 5px 10px 0px #cfcfcf;
+  margin-top: 15px;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant img {
+  width: 100%;
+  height: 175px;
+  border-radius: 25px 25px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -3px;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container {
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 15px 15px 10px;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .fas {
+  background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  display: none;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .far {
+  font-size: 1.5em;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant:hover .container .fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant:hover .container .far {
+  display: none;
 }
 
 footer .cadrefooter {
-  margin-top: 50px;
-  background-color: #383838;
+  background-color: #787878;
   padding: 20px;
 }
 

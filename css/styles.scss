@@ -3,7 +3,7 @@
 $colorprimaire : #9356DC;
 $colorsecondaire : #FF79DA;
 $colortertiaire : #99E2D0;
-$colorgris: #383838;
+$colorgris: #787878;
 $colorgrisclair: #e1e1e1;
 $colorgristresclair: #ececec;
 $policetitre : 'Shrikhand',;
@@ -23,7 +23,6 @@ header{
     align-items: center;
     #cadrelogo{
         width: 100%;
-        height: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -31,6 +30,7 @@ header{
         position: relative;
         img{
             width: 35%;
+            margin: 25px;
         }
     }
     
@@ -75,67 +75,128 @@ main{
 
             }
 
-            form{
-                #explorer{
-                    text-align: center;
-                    background: linear-gradient($colorsecondaire, $colorprimaire);
-                    color: white;
-                    border: none;
-                    padding: 15px;
-                    border-radius: 50px;
-                    box-shadow: 0px 5px 8px 0px #b2b2b2;
-                }
+            a{
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                background: linear-gradient($colorsecondaire, $colorprimaire);
+                color: white;
+                border: none;
+                padding: 15px;
+                border-radius: 50px;
+                box-shadow: 0px 5px 8px 0px #b2b2b2;
             }
         }
     }
 
     .fonctionnement{
+        width: 100%;
         .cadrefonctionnement{
             padding: 50px 25px;
+            margin: 0 0 25px 0;
 
-            h2{
+            .etapes{
+                padding: 0 10px;
 
-            }
-
-            .etapesfonctionnement{
-                display: flex;
-                .numerosfonctionnement{
-                    background-color: $colorprimaire;
-                    color: white;
-                    padding: 6px 10px 4px 10px;
-                    border-radius: 100%;
-                    font-family: 'roboto';
+                .etapesfonctionnement{
+                    background-color: $colorgristresclair;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0px 5px 10px 0px #cfcfcf;
+                    margin-top: 25px;
+                    height: 70px;
+                    border-radius: 25px;
+                    font-weight: bold;
+                    .numerosfonctionnement{
+                        background-color: $colorprimaire;
+                        color: white;
+                        padding: 6px 10px 4px 10px;
+                        border-radius: 100%;
+                        font-family: 'roboto';
+                        position: relative;
+                        left: -15px;
+                    }
+    
+                    p{
+                        margin: 0;
+                    }
+    
+                    .fas{
+                        color: $colorgris;
+                        font-size: 1.4em;
+                        margin: 0 15px 0 8px;
+                    }
+    
+                    .fa-store{
+                        color: $colorprimaire;
+                    }
                 }
 
-                .fas{
+                .degustez{
+                    background-color: #f8f2ff;
+                }
+            }
 
+            
+        }
+    }
+
+    #restaurants{
+        background-color: $colorgristresclair;
+        .cadrerestaurants{
+            padding: 50px 25px;
+            .articlesresto{
+                .articlerestaurant{
+                    border-radius: 25px;
+                    box-shadow: 0px 5px 10px 0px #cfcfcf;
+                    margin-top: 15px;
+                    img{
+                        width: 100%;
+                        height: 175px;
+                        border-radius: 25px 25px 0 0;
+                        object-fit: cover;
+                        margin-bottom: -3px;
+                    }
+                    .container{
+                        background-color: white;
+                        border-radius: 0 0 25px 25px;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 15px 15px 15px 10px;
+                        .fas{
+                            background: linear-gradient(45deg, $colorsecondaire 0%, $colorprimaire 100%);
+                            background-clip: border-box;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-size: 1.5em;
+                            display: none;
+                        }
+    
+                        .far{
+                            font-size: 1.5em;
+                        }
+    
+
+                    }
                 }
             }
         }
     }
-
-    .restaurants{
+}
+main{
+    #restaurants{
         .cadrerestaurants{
-            .articlerestaurant{
-                img{
-
-                }
-                .container{
-                    .fas{
-
-                    }
-
-                    .far{
-
-                    }
-
-                    .conteneur{
-                        h3{
-
+            .articlesresto{
+                .articlerestaurant:hover{
+                    .container{
+                        .fas{
+                            display: flex;
                         }
 
-                        p{
-
+                        .far{
+                            display: none;
                         }
                     }
                 }
@@ -146,7 +207,6 @@ main{
 
 footer{
     .cadrefooter{
-        margin-top: 50px;
         background-color: $colorgris;
         padding: 20px;
         .logo{
