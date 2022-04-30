@@ -224,6 +224,10 @@ main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container
   font-size: 1.5em;
 }
 
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant:hover {
+  cursor: pointer;
+}
+
 main #restaurants .cadrerestaurants .articlesresto .articlerestaurant:hover .container .fas {
   display: -webkit-box;
   display: -ms-flexbox;

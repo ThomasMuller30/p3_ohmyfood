@@ -185,12 +185,14 @@ main{
         }
     }
 }
+
 main{
     #restaurants{
         .cadrerestaurants{
             .articlesresto{
-                .articlerestaurant:hover{
-                    .container{
+                .articlerestaurant{
+                    cursor: pointer;
+                    .container:hover{
                         .fas{
                             display: flex;
                         }
