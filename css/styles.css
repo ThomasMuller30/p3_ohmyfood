@@ -183,7 +183,11 @@ main #restaurants .cadrerestaurants .articlesresto .articlerestaurant {
   margin-top: 15px;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant img {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant a {
+  width: 100%;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant a img {
   width: 100%;
   height: 175px;
   border-radius: 25px 25px 0 0;
@@ -224,17 +228,30 @@ main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container
   font-size: 1.5em;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant:hover {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .conteneur a {
+  text-decoration: none;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .conteneur a h3 {
+  color: black;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .conteneur a p {
+  text-decoration: none;
+  color: black;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant {
   cursor: pointer;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant:hover .container .fas {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant:hover .container .far {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .far:hover {
   display: none;
 }
 
