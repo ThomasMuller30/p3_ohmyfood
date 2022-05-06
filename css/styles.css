@@ -37,7 +37,11 @@ header #cadrelogo {
   position: relative;
 }
 
-header #cadrelogo img {
+header #cadrelogo a {
+  text-align: center;
+}
+
+header #cadrelogo a img {
   width: 35%;
   margin: 25px;
 }
@@ -54,14 +58,51 @@ header p {
           justify-content: center;
   width: 100%;
   height: 55px;
-  background-color: #e1e1e1;
+  color: #353535;
+  background-color: #EAEAEA;
   font-size: 1.2em;
   font-weight: 600;
 }
 
 header p #localisation .fa-map-marker-alt {
   margin-right: 15px;
-  color: #787878;
+  color: #353535;
+}
+
+header .headresto .restohaut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headresto .restohaut a {
+  text-align: center;
+  text-decoration: none;
+}
+
+header .headresto .restohaut a i {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  font-size: 1.3em;
+  color: black;
+}
+
+header .headresto .restohaut a img {
+  width: 35%;
+  margin: 25px;
+}
+
+header .headresto img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main .reservation {
@@ -83,7 +124,7 @@ main .reservation .cadrereserv {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ececec;
+  background-color: #F6F6F6;
   padding: 50px 15px;
 }
 
@@ -125,7 +166,7 @@ main .fonctionnement .cadrefonctionnement .etapes {
 }
 
 main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement {
-  background-color: #ececec;
+  background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +196,7 @@ main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement p {
 }
 
 main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement .fas {
-  color: #787878;
+  color: #353535;
   font-size: 1.4em;
   margin: 0 15px 0 8px;
 }
@@ -165,11 +206,11 @@ main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement .fa-stor
 }
 
 main .fonctionnement .cadrefonctionnement .etapes .degustez {
-  background-color: #f8f2ff;
+  background-color: #f5edff;
 }
 
 main #restaurants {
-  background-color: #ececec;
+  background-color: #F6F6F6;
 }
 
 main #restaurants .cadrerestaurants {
@@ -183,17 +224,38 @@ main #restaurants .cadrerestaurants .articlesresto .articlerestaurant {
   margin-top: 15px;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant a {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .photos a {
   width: 100%;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant a img {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .photos a img {
   width: 100%;
   height: 175px;
   border-radius: 25px 25px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: -3px;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .photos .news {
+  width: 0;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .photos .news .nouveaux {
+  padding: 10px 20px;
+  color: #008766;
+  background-color: #99E2D0;
+  height: 40px;
+  position: relative;
+  top: 15px;
+  right: 120px;
+  width: 100px;
 }
 
 main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container {
@@ -215,17 +277,26 @@ main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container
   padding: 15px 15px 15px 10px;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .fas {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .coeur {
+  position: relative;
+  left: -35px;
+  top: -12px;
+}
+
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .coeur .fas {
   background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5em;
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .far {
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .coeur .far {
   font-size: 1.5em;
+  position: absolute;
+  opacity: 1;
 }
 
 main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .conteneur a {
@@ -245,22 +316,24 @@ main #restaurants .cadrerestaurants .articlesresto .articlerestaurant {
   cursor: pointer;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .fas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .coeur:hover .fas {
+  opacity: 1;
 }
 
-main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .far:hover {
-  display: none;
+main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container .coeur:hover .far {
+  opacity: 0;
 }
 
 footer .cadrefooter {
-  background-color: #787878;
+  background-color: #353535;
   padding: 20px;
 }
 
-footer .cadrefooter .logo {
+footer .cadrefooter a {
+  text-decoration: none;
+}
+
+footer .cadrefooter a .logo {
   font-family: "Shrikhand";
   color: white;
   margin-bottom: 15px;
