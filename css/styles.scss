@@ -17,6 +17,64 @@ $policenormale : 'roboto';
     font-family: $policenormale;
 }
 
+/* Page Accueil */
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    animation: 5s 1s 1 both disparition;
+
+    .div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .animation{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .fork{
+                display: flex;
+                justify-content: flex-end;
+                width: calc(50% - 320px);
+                img{
+                    width: 155px;
+                    animation: 1s 0.5s 1 both rotatefork;
+                }
+            }
+            
+            .title{
+                p{
+                    font-family: "shrikhand";
+                    width: 0%;
+                    font-size: 2em;
+                    text-overflow: clip;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    animation: 3s 1s 1 both opacite;
+                }
+            }
+
+            .knife{
+                width: calc(50% - 320px);
+                img{
+                    width: 170px;
+                    animation: 1s 0.5s 1 both rotateknife;
+                    position: relative;
+                    top: 10px
+                }
+            }
+        }
+    }
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -56,6 +114,8 @@ header{
     }
 }
 
+/* Page resto */
+
 header{
     .headresto{
         .restohaut{
@@ -86,6 +146,8 @@ header{
     }
 }
 
+/* Page accueil */
+
 main{
     .reservation{
         width: 100%;
@@ -109,7 +171,7 @@ main{
 
             }
 
-            a{
+            .btn{
                 text-decoration: none;
                 color: white;
                 text-align: center;
@@ -118,7 +180,7 @@ main{
                 border: none;
                 padding: 15px;
                 border-radius: 50px;
-                box-shadow: 0px 5px 8px 0px #b2b2b2;
+                box-shadow: 0px 5px 8px 0px rgba(178,178,178,1);
             }
         }
     }
@@ -235,12 +297,14 @@ main{
                                 font-size: 1.5em;
                                 opacity: 0;
                                 position: absolute;
+                                transition: 0.5s;
                             }
         
                             .far{
                                 font-size: 1.5em;
                                 position: absolute;
                                 opacity: 1;
+                                transition: 0.5s;
                             }
                         }                        
     
@@ -265,6 +329,27 @@ main{
 }
 
 main{
+    .reservation{
+        .cadrereserv{
+            .btn:hover{
+                box-shadow: 0px 5px 8px 0px rgba(88,88,88,1);
+                filter: brightness(1.1);
+            }
+        }
+    }
+
+    .fonctionnement{
+        .cadrefonctionnement{
+            .etapes{
+                .etapesfonctionnement:hover{
+                    background-color: #c5abe3;
+                }
+            }
+        }
+    }
+}
+
+main{
     #restaurants{
         .cadrerestaurants{
             .articlesresto{
@@ -274,10 +359,12 @@ main{
                         .coeur:hover{
                             .fas{
                                 opacity: 1;
+                                transition: 0.5s;
                             }
     
                             .far{
                                 opacity: 0;
+                                transition: 0.5s;
                             }
                         }
                         
@@ -288,11 +375,15 @@ main{
     }
 }
 
+/* Pages resto */
+
 main{
     .mainresto{
 
     }
 }
+
+/* Footer All pages */
 
 footer{
     .cadrefooter{
@@ -326,4 +417,28 @@ footer{
             }
         }
     }
+}
+
+/* Animations */
+
+@keyframes disparition {
+    0%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 0;visibility: hidden;}   
+}
+
+@keyframes opacite {
+    0%{width: 0px;}
+    85%{width: 184px;}
+    100%{width: 184px;}  
+}
+
+@keyframes rotatefork{
+    0%{transform: rotate(0deg);position: relative; right: -75px;}
+    100%{transform: rotate(-45deg);position: relative; right: 0;}
+} 
+
+@keyframes rotateknife {
+    0%{transform: rotate(10deg); position: relative; left: -75px;}
+    100%{transform: rotate(55deg); position: relative; left: 0;}    
 }
