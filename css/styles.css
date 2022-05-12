@@ -128,7 +128,7 @@ header #cadrelogo a img {
   margin: 25px;
 }
 
-header p {
+header form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,14 +140,49 @@ header p {
           justify-content: center;
   width: 100%;
   height: 55px;
-  color: #353535;
   background-color: #EAEAEA;
   font-size: 1.2em;
-  font-weight: 600;
 }
 
-header p #localisation .fa-map-marker-alt {
-  margin-right: 15px;
+header form #localisation {
+  position: relative;
+  left: 22px;
+}
+
+header form #localisation .fa-map-marker-alt {
+  color: #353535;
+  margin-right: 5px;
+}
+
+header form #searchbar {
+  border: none;
+  background-color: transparent;
+  padding: 10px 10px 10px 5px;
+  position: relative;
+  left: 22px;
+}
+
+header form #searchbar::-webkit-input-placeholder {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #353535;
+}
+
+header form #searchbar:-ms-input-placeholder {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #353535;
+}
+
+header form #searchbar::-ms-input-placeholder {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #353535;
+}
+
+header form #searchbar::placeholder {
+  font-size: 1.2em;
+  font-weight: 600;
   color: #353535;
 }
 
