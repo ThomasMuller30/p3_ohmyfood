@@ -361,9 +361,7 @@ main{
             }
         }
     }
-}
 
-main{
     #restaurants{
         .cadrerestaurants{
             .articlesresto{
@@ -393,7 +391,180 @@ main{
 
 main{
     .mainresto{
+        position: relative;
+        top: -100px;
+        background-color: $colorgristresclair;
+        border-radius: 50px 50px 0 0;
 
+        .cadrepr{
+            padding: 40px 30px;
+
+            .titlepr{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    font-family: $policetitre;
+                    font-weight: 500;
+                }
+                .coeurs{
+                    font-size: 1.5em;
+                    .far{
+                        opacity: 1;
+                        position: absolute;
+                        right: 30px;
+                        top: 52px;
+                        transition: 0.5s
+                    }
+
+                    .fas{
+                        opacity: 0;
+                        position: absolute;
+                        right: 30px;
+                        top: 52px;
+                        transition: 0.5s;
+                        background: linear-gradient(45deg, $colorsecondaire 0%, $colorprimaire 100%);
+                        background-clip: border-box;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+
+            .menu{
+                animation: 1s 1s 1 both apparition;
+                .entrees{
+                    margin: 20px 0;
+                    h2{
+                        width: 48px;
+                        border-bottom: 3px solid $colortertiaire;
+                        font-weight: 400;
+                        font-size: 1.2em;
+                    }
+                }
+
+                .plats{
+                    margin: 20px 0;
+                    h2{
+                        width: 48px;
+                        border-bottom: 3px solid $colortertiaire;
+                        font-weight: 400;
+                        font-size: 1.2em;
+                    }
+                }
+
+                .desserts{
+                    margin: 20px 0;
+                    h2{
+                        width: 48px;
+                        border-bottom: 3px solid $colortertiaire;
+                        font-weight: 400;
+                        font-size: 1.2em;
+                    }
+                }
+
+                .btn{
+
+                }
+            }
+        }
+    }
+}
+
+main{
+    .mainresto{
+        .cadrepr{
+            .titlepr{
+                .coeurs:hover{
+                    .far{
+                        opacity: 0;
+                    }
+
+                    .fas{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cards{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px #cfcfcf;
+    margin-top: 15px;
+    .intitule{
+        width: 90%;
+        height: 100%;
+        padding: 12px 10px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .prix{
+        width: 10%;
+        padding: 12px 10px;
+        transition: 0.5s;
+        .prixrepas{
+            font-weight: 600;
+        }
+    }
+    .check{
+        width: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        background-color: $colortertiaire;
+        border-radius: 0 15px 15px 0;
+        transition: 0.5s;
+        .fa-check-circle{
+            font-size: 1.5em;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: 0.5s;
+        }
+    }
+}
+
+.cards:hover{
+    cursor: pointer;
+    .intitule{
+        width: 60%;
+        transition: 0.5s;
+    }
+    .prix{
+        width: 10%;
+        transition: 0.5s;
+        .prixrepas{
+            font-weight: 600;
+        }
+    }
+    .check{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        transition: 0.5s;
+        .fa-check-circle{
+            animation: 1s 0s 1 both rotation;
+        }
     }
 }
 
@@ -449,10 +620,21 @@ footer{
 
 @keyframes rotatefork{
     0%{transform: rotate(0deg);position: relative; right: -75px;}
-    100%{transform: rotate(-45deg);position: relative; right: 0;}
+    100%{transform: rotate(-45deg);position: relative; right: -30px;}
 } 
 
 @keyframes rotateknife {
     0%{transform: rotate(10deg); position: relative; left: -75px;}
-    100%{transform: rotate(55deg); position: relative; left: 0;}    
+    100%{transform: rotate(55deg); position: relative; left: -30px;}    
+}
+
+@keyframes rotation {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes apparition {
+    0%{opacity: 0; position : relative; top: 40px;}
+    100%{opacity: 1; position:relative; top: 0;}
+    
 }
