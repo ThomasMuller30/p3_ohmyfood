@@ -263,7 +263,6 @@ main .reservation .cadrereserv .btn {
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
   border: none;
   padding: 15px;
   border-radius: 50px;
@@ -552,6 +551,29 @@ main .mainresto .cadrepr .menu .desserts h2 {
   font-size: 1.2em;
 }
 
+main .mainresto .cadrepr .menu .btn {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .mainresto .cadrepr .menu .btn .btn2 {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  padding: 15px 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 8px 0px #b2b2b2;
+          box-shadow: 0px 5px 8px 0px #b2b2b2;
+}
+
 main .mainresto .cadrepr .titlepr .coeurs:hover .far {
   opacity: 0;
 }
@@ -600,17 +622,19 @@ main .mainresto .cadrepr .titlepr .coeurs:hover .fas {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 1.1em;
 }
 
 .cards .intitule p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 0.9em;
 }
 
 .cards .prix {
   width: 10%;
-  padding: 12px 10px;
+  padding: 12px 0px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -680,6 +704,13 @@ main .mainresto .cadrepr .titlepr .coeurs:hover .fas {
 .cards:hover .check .fa-check-circle {
   -webkit-animation: 1s 0s 1 both rotation;
           animation: 1s 0s 1 both rotation;
+}
+
+main .mainresto .cadrepr .menu .btn .btn2:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px #585858;
+          box-shadow: 0px 5px 8px 0px #585858;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 /* Footer All pages */
