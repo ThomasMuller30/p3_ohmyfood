@@ -481,11 +481,13 @@ main .mainresto .cadrepr .titlepr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 main .mainresto .cadrepr .titlepr h1 {
   font-family: "Shrikhand";
   font-weight: 500;
+  width: 85%;
 }
 
 main .mainresto .cadrepr .titlepr .coeurs {
