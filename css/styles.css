@@ -187,6 +187,10 @@ header form #searchbar::placeholder {
 }
 
 /* Page resto */
+header .headresto {
+  width: 100%;
+}
+
 header .headresto .restohaut {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,6 +225,7 @@ header .headresto .restohaut .titre h1 {
 
 header .headresto img {
   width: 100%;
+  max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }

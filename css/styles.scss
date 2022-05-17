@@ -132,6 +132,7 @@ header{
 
 header{
     .headresto{
+        width: 100%;
         .restohaut{
             display: flex;
             align-items: center;
@@ -159,6 +160,7 @@ header{
         }
         img{
             width: 100%;
+            max-height: 500px;
             object-fit: cover;
         }
     }
