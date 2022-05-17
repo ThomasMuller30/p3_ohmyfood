@@ -688,3 +688,76 @@ footer{
     100%{opacity: 1; position:relative; top: 0;}
     
 }
+
+/* tablette */
+
+@media screen and (min-width: 767px) {
+    main{
+        #restaurants{
+            .cadrerestaurants{
+                .articlesresto{
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    .articlerestaurant{
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* desktop */
+
+@media screen and (min-width: 990px) {
+    main{
+
+        .fonctionnement{
+            .cadrefonctionnement{
+                .etapes{
+                    display: flex;
+                    justify-content: space-around;
+                    .etapesfonctionnement{
+                        width: 28%;
+                    }
+                }
+            }
+        }
+
+        #restaurants{
+            .cadrerestaurants{
+                .articlesresto{
+                    .articlerestaurant{
+                        .photos{
+                            a{
+                                img{
+                                    height: 250px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mainresto{
+            .cadrepr{
+                .menu{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    &>div{
+                        width: 25%;
+                    }
+
+                    .btn{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

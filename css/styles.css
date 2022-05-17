@@ -935,4 +935,52 @@ footer .cadrefooter nav ul li a i.fas.fa-hands-helping {
     top: 0;
   }
 }
+
+/* tablette */
+@media screen and (min-width: 767px) {
+  main #restaurants .cadrerestaurants .articlesresto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #restaurants .cadrerestaurants .articlesresto .articlerestaurant {
+    width: 45%;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 990px) {
+  main .fonctionnement .cadrefonctionnement .etapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement {
+    width: 28%;
+  }
+  main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .photos a img {
+    height: 250px;
+  }
+  main .mainresto .cadrepr .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .mainresto .cadrepr .menu > div {
+    width: 25%;
+  }
+  main .mainresto .cadrepr .menu .btn {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
