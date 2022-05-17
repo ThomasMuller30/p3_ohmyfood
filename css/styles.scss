@@ -135,21 +135,25 @@ header{
         .restohaut{
             display: flex;
             align-items: center;
-            justify-content: center;
+            width: 100%;
             
             a{
                 text-align: center;
                 text-decoration: none;
                 i{
-                    position: absolute;
-                    top: 30px;
-                    left: 70px;
+                    padding: 30px;
                     font-size: 1.3em;
                     color: black;
                 }
-                img{
-                    width: 35%;
-                    margin: 25px;
+            }
+
+            .titre{
+                width: calc(100% - 150px);
+                h1{
+                    font-family: $policetitre;
+                    color: black;
+                    font-weight: 500;
+                    font-size: 1.7em;
                 }
             }
         }
@@ -359,6 +363,7 @@ main{
         .cadrefonctionnement{
             .etapes{
                 .etapesfonctionnement:hover{
+                    cursor: pointer;
                     background-color: #c5abe3;
                     transition: 0.5s;
                 }
@@ -521,13 +526,16 @@ main{
     box-shadow: 0px 5px 10px 0px #cfcfcf;
     margin-top: 15px;
     .intitule{
-        width: 90%;
+        flex: 1;
         height: 100%;
         padding: 12px 10px;
         transition: 0.5s;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         h3{
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -542,8 +550,7 @@ main{
         }
     }
     .prix{
-        width: 10%;
-        padding: 12px 0px;
+        padding: 12px 20px;
         transition: 0.5s;
         .prixrepas{
             font-weight: 600;
@@ -572,18 +579,17 @@ main{
 .cards:hover{
     cursor: pointer;
     .intitule{
-        width: 60%;
         transition: 0.5s;
     }
     .prix{
-        width: 10%;
         transition: 0.5s;
         .prixrepas{
             font-weight: 600;
         }
     }
     .check{
-        width: 30%;
+        width: 65px;
+        margin-left: 10px;
         height: 100%;
         display: flex;
         transition: 0.5s;

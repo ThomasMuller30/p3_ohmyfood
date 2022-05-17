@@ -194,9 +194,7 @@ header .headresto .restohaut {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
 }
 
 header .headresto .restohaut a {
@@ -205,16 +203,20 @@ header .headresto .restohaut a {
 }
 
 header .headresto .restohaut a i {
-  position: absolute;
-  top: 30px;
-  left: 70px;
+  padding: 30px;
   font-size: 1.3em;
   color: black;
 }
 
-header .headresto .restohaut a img {
-  width: 35%;
-  margin: 25px;
+header .headresto .restohaut .titre {
+  width: calc(100% - 150px);
+}
+
+header .headresto .restohaut .titre h1 {
+  font-family: "Shrikhand";
+  color: black;
+  font-weight: 500;
+  font-size: 1.7em;
 }
 
 header .headresto img {
@@ -449,6 +451,7 @@ main .reservation .cadrereserv .btn:hover {
 }
 
 main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement:hover {
+  cursor: pointer;
   background-color: #c5abe3;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -618,7 +621,9 @@ main .mainresto .cadrepr .titlepr .coeurs:hover .fas {
 }
 
 .cards .intitule {
-  width: 90%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   padding: 12px 10px;
   -webkit-transition: 0.5s;
@@ -633,6 +638,9 @@ main .mainresto .cadrepr .titlepr .coeurs:hover .fas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .cards .intitule h3 {
@@ -650,8 +658,7 @@ main .mainresto .cadrepr .titlepr .coeurs:hover .fas {
 }
 
 .cards .prix {
-  width: 10%;
-  padding: 12px 0px;
+  padding: 12px 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -693,13 +700,11 @@ main .mainresto .cadrepr .titlepr .coeurs:hover .fas {
 }
 
 .cards:hover .intitule {
-  width: 60%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .cards:hover .prix {
-  width: 10%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -709,7 +714,8 @@ main .mainresto .cadrepr .titlepr .coeurs:hover .fas {
 }
 
 .cards:hover .check {
-  width: 30%;
+  width: 65px;
+  margin-left: 10px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
