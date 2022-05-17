@@ -194,6 +194,7 @@ main{
                 padding: 15px;
                 border-radius: 50px;
                 box-shadow: 0px 5px 8px 0px rgba(178,178,178,1);
+                transition: 0.5s;
             }
         }
     }
@@ -216,6 +217,7 @@ main{
                     height: 70px;
                     border-radius: 25px;
                     font-weight: bold;
+                    transition: 0.5s;
                     .numerosfonctionnement{
                         background-color: $colorprimaire;
                         color: white;
@@ -284,6 +286,7 @@ main{
                                 top: 15px;
                                 right: 120px;
                                 width: 100px;
+                                border-radius: 4px;
                             }
                         }
                     }
@@ -347,6 +350,7 @@ main{
             .btn:hover{
                 box-shadow: 0px 5px 8px 0px rgba(88,88,88,1);
                 filter: brightness(1.1);
+                transition: 0.5s;
             }
         }
     }
@@ -356,6 +360,7 @@ main{
             .etapes{
                 .etapesfonctionnement:hover{
                     background-color: #c5abe3;
+                    transition: 0.5s;
                 }
             }
         }
@@ -415,7 +420,7 @@ main{
                         position: absolute;
                         right: 50px;
                         top: 52px;
-                        transition: 0.5s
+                        transition: 0.5s;
                     }
 
                     .fas{
@@ -433,8 +438,8 @@ main{
             }
 
             .menu{
-                animation: 1s 1s 1 both apparition;
                 .entrees{
+                    animation: 1s 1s 1 both apparition;
                     margin: 20px 0;
                     h2{
                         width: 48px;
@@ -445,6 +450,7 @@ main{
                 }
 
                 .plats{
+                    animation: 1s 2s 1 both apparition;
                     margin: 20px 0;
                     h2{
                         width: 48px;
@@ -455,6 +461,7 @@ main{
                 }
 
                 .desserts{
+                    animation: 1s 3s 1 both apparition;
                     margin: 20px 0;
                     h2{
                         width: 48px;
@@ -465,6 +472,7 @@ main{
                 }
 
                 .btn{
+                    animation: 1s 4s 1 both apparition;
                     margin-top: 50px;
                     display: flex;
                     justify-content: center;
@@ -477,6 +485,7 @@ main{
                         padding: 15px 50px;
                         border-radius: 50px;
                         box-shadow: 0px 5px 8px 0px rgba(178,178,178,1);
+                        transition: 0.5s
                     }
                 }
             }
@@ -592,6 +601,7 @@ main{
                     .btn2:hover{
                         box-shadow: 0px 5px 8px 0px rgba(88,88,88,1);
                         filter: brightness(1.1);
+                        transition: 0.5s;
                     }
                 }
             }

@@ -268,6 +268,8 @@ main .reservation .cadrereserv .btn {
   border-radius: 50px;
   -webkit-box-shadow: 0px 5px 8px 0px #b2b2b2;
           box-shadow: 0px 5px 8px 0px #b2b2b2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main .fonctionnement {
@@ -297,6 +299,8 @@ main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement {
   height: 70px;
   border-radius: 25px;
   font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement .numerosfonctionnement {
@@ -374,6 +378,7 @@ main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .photos .n
   top: 15px;
   right: 120px;
   width: 100px;
+  border-radius: 4px;
 }
 
 main #restaurants .cadrerestaurants .articlesresto .articlerestaurant .container {
@@ -439,10 +444,14 @@ main .reservation .cadrereserv .btn:hover {
           box-shadow: 0px 5px 8px 0px #585858;
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main .fonctionnement .cadrefonctionnement .etapes .etapesfonctionnement:hover {
   background-color: #c5abe3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main #restaurants .cadrerestaurants .articlesresto .articlerestaurant {
@@ -516,12 +525,9 @@ main .mainresto .cadrepr .titlepr .coeurs .fas {
   -webkit-text-fill-color: transparent;
 }
 
-main .mainresto .cadrepr .menu {
+main .mainresto .cadrepr .menu .entrees {
   -webkit-animation: 1s 1s 1 both apparition;
           animation: 1s 1s 1 both apparition;
-}
-
-main .mainresto .cadrepr .menu .entrees {
   margin: 20px 0;
 }
 
@@ -533,6 +539,8 @@ main .mainresto .cadrepr .menu .entrees h2 {
 }
 
 main .mainresto .cadrepr .menu .plats {
+  -webkit-animation: 1s 2s 1 both apparition;
+          animation: 1s 2s 1 both apparition;
   margin: 20px 0;
 }
 
@@ -544,6 +552,8 @@ main .mainresto .cadrepr .menu .plats h2 {
 }
 
 main .mainresto .cadrepr .menu .desserts {
+  -webkit-animation: 1s 3s 1 both apparition;
+          animation: 1s 3s 1 both apparition;
   margin: 20px 0;
 }
 
@@ -555,6 +565,8 @@ main .mainresto .cadrepr .menu .desserts h2 {
 }
 
 main .mainresto .cadrepr .menu .btn {
+  -webkit-animation: 1s 4s 1 both apparition;
+          animation: 1s 4s 1 both apparition;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,6 +587,8 @@ main .mainresto .cadrepr .menu .btn .btn2 {
   border-radius: 50px;
   -webkit-box-shadow: 0px 5px 8px 0px #b2b2b2;
           box-shadow: 0px 5px 8px 0px #b2b2b2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main .mainresto .cadrepr .titlepr .coeurs:hover .far {
@@ -714,6 +728,8 @@ main .mainresto .cadrepr .menu .btn .btn2:hover {
           box-shadow: 0px 5px 8px 0px #585858;
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* Footer All pages */
