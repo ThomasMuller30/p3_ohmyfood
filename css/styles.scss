@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $colorprimaire : #9356DC;
 $colorsecondaire : #FF79DA;
@@ -7,7 +8,7 @@ $colorgris: #353535;
 $colorgrisclair: #EAEAEA;
 $colorgristresclair: #F6F6F6;
 $policetitre : 'Shrikhand',;
-$policenormale : 'roboto';
+$policenormale : 'Roboto';
 
 *{
     font-family: $policenormale;
